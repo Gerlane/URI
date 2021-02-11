@@ -1,5 +1,9 @@
-n= gets.to_i
+tempo = gets.strip.to_i
 
-result = n / 3600
+horas = tempo / 3600
+tempo %= 3600
 
-puts "#{result}"
+minutos = tempo / 60
+tempo %= 60
+
+puts "#{horas}:#{minutos}:#{tempo}"
